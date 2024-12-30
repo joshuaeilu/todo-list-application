@@ -11,7 +11,7 @@
 
 import { useRef } from "react";
 import ToDoItem from "./ToDoItem";
-import {  VStack } from "@chakra-ui/react";
+import {  VStack, Text } from "@chakra-ui/react";
 export default function ShowToDoList({ todos, setToDo}) {
 
     // Reference to the input field for editing the task
@@ -37,15 +37,19 @@ export default function ShowToDoList({ todos, setToDo}) {
 
     return (
         <VStack spacing={4} align="stretch" mt={5}>
-            {todos.map((todo) => (
-                <ToDoItem
-                    key={todo.id}
-                    todoItem={todo}
-                    deleteToDo={() => deleteToDoItem(todo)}
-                    updateToDo={() => updateToDoItem(todo)}
-                    todoRef={editRef}
-                />
-            ))}
-        </VStack>
+    {todos.length > 0 ? (
+        todos.map((todo) => (
+            <ToDoItem
+                key={todo.id}
+                todoItem={todo}
+                deleteToDo={() => deleteToDoItem(todo)}
+                updateToDo={() => updateToDoItem(todo)}
+                todoRef={editRef}
+            />
+        ))
+    ) : (
+        <Text align="center">No tasks</Text>
+    )}
+</VStack>
     )
 }
