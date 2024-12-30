@@ -7,7 +7,8 @@ The To-Do List Application is an easy-to-use tool to help users manage their tas
 In the project directory, you can run:
 
 ### `1. npm install`
-This installs all the necessary modules and dependencies
+This installs all the necessary modules and dependencies 
+* You can ignore the vulnerabilites after running this command.
 
 ### `2. npm run electron:serve`
 
