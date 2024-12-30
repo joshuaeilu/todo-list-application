@@ -1,6 +1,6 @@
 # Getting Started with Todo List Application
 
-This project 
+The To-Do List Application is an easy-to-use tool to help users manage their tasks. Users can create an account or log in to access their own to-do lists. The app allows users to add new tasks, edit existing ones, and delete tasks they no longer need. Each user has their own list, so tasks are kept private and organized.
 
 ## Available Scripts
 
