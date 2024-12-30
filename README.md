@@ -6,7 +6,10 @@ The To-Do List Application is an easy-to-use tool to help users manage their tas
 
 In the project directory, you can run:
 
-### `npm run electron:serve`
+### `1. npm install`
+This installs all the necessary modules and dependencies
+
+### `2. npm run electron:serve`
 
 Runs the app in the development mode.\
 
